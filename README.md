@@ -20,3 +20,12 @@ python main.py
 
 3. Open web browser on `http://127.0.0.1:5000/ `
 
+Demo
+====
+
+- Data from Spreadsheet
+
+![data](doc/Excel.png)
+
+- Web page
+![web](doc/webpage.png)
