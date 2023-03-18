@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="table">
+
+    <div class="row header blue">
+      {% for col in df.columns %}
+        <div class="cell">
+          {{ col }}
+        </div>
+      {% endfor %}
+    </div>
+
+    {% for index, row in df.iterrows() %}
+
+      <div class="row">
+        {% for col in df.columns %}
+          <div class="cell">
+            {{ row[col] }}
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+
+  </div>
+{% endblock %}
